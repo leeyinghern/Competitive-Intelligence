@@ -33,7 +33,7 @@ except:
 	agency = 1 #arbitrary
 
 
-d = pickle.load(open("./pyfile/allagency","rb"))
+d = pickle.load(open("Simple_Button/pyfile/allagency","rb"))
 
 
 
@@ -202,7 +202,7 @@ def gauge_plot_agency(agency, year, proc_cat):
             values = get_proc_cat(agency,year)['all'][i]
             for val in values:
                 gauge_chart.add(i,val)
-        gauge_chart.render_to_file('./pygal/'+agency+'gauge_plot.svg')
+        gauge_chart.render_to_file('Simple_Button/pygal/'+agency+'gauge_plot.svg')
 
     # elif proc_cat == 'current_year':
     #     values = get_proc_cat(agency,year)[year]
@@ -249,10 +249,10 @@ def gauge_plot_agency(agency, year, proc_cat):
 
 
 
-    return(gauge_chart.render_to_file('./pygal/'+agency+'gauge_plot.svg'))
+    return(gauge_chart.render_to_file('Simple_Button/pygal/'+agency+'gauge_plot.svg'))
 
 
 
 gauge_plot_agency(agency,year,proc_cat)
 
-print('./pygal/'+agency+'gauge_plot.svg')
+print('Simple_Button/pygal/'+agency+'gauge_plot.svg')
