@@ -26,7 +26,7 @@ except:
 
 
 def top_3_by_value(category):
-    d= pickle.load(open("./pyfile/dictionary_dataframe_2","rb"))
+    d= pickle.load(open("Simple_Button/pyfile/dictionary_dataframe_2","rb"))
     for item in d.keys():
         if category == item:
             dataframe = d[str(category)]
@@ -42,14 +42,14 @@ def top_3_by_value(category):
     #    pie_chart.add("Project ID:"+'\n'+str(dataframe.iloc[i]["_id"])+'\n'+'\n'+'\n'+"Awarded Value is:"+'\n'+str(dataframe.iloc[i]["AwardedValue"]), float(dataframe.iloc[i]["AwardedValue"]/total_value))
         pie_chart.add("Project ID:"+'\n'+str(dataframe.iloc[i]["_id"])+'\n'+'\n'+"Agency:"+'\n'+str(dataframe.iloc[i]["Agency"].upper()),(float(dataframe.iloc[i]["AwardedValue"])))
 
-    pie_chart.render_to_file('./pygal/'+category+'.svg')
+    pie_chart.render_to_file('Simple_Button/pygal/'+category+'.svg')
 
-    return(pie_chart.render_to_file('./pygal/'+category+'.svg'))
+    return(pie_chart.render_to_file('Simple_Button/pygal/'+category+'.svg'))
 
 
 
 # Output the address for retrieval using JS
-print('./pygal/'+category+'.svg')
+print('Simple_Button/pygal/'+category+'.svg')
 
 # C:\Users\Lee Ying Hern\Desktop\Simple Button2\Simple Button\pygal\services advertising services.svg
 # address = './temp/'+"intro_page"+''+str(random.randint(1,10000001))+'.txt'
