@@ -23,8 +23,8 @@ except:
 	query = 1 #arbitrary
 
 
-bulktenders= pickle.load(open("./pyfile/bulk_tenders","rb"))
-id_list = pickle.load(open("./pyfile/id_list","rb"))
+bulktenders= pickle.load(open("Simple_Button/pyfile/bulk_tenders","rb"))
+id_list = pickle.load(open("Simple_Button/pyfile/id_list","rb"))
 
 def bulk_detail(query):
     for i in range(len(id_list)):
@@ -62,7 +62,7 @@ def bulk_detail(query):
 
     return (json.dumps(dict1))
 # Create address variable in the temp folder
-address = './temp/'+"bulksearch"+''+str(random.randint(1,10000001))+'.txt'
+address = 'Simple_Button/temp/'+"bulksearch"+''+str(random.randint(1,10000001))+'.txt'
 
 # Write a file to the address
 with open(address, 'w') as outfile:
