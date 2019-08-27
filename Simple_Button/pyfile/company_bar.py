@@ -28,7 +28,7 @@ except:
 	company = 1 #arbitrary
 
 company = company.lower()
-d = pickle.load(open("./pyfile/companydictdataframes","rb"))
+d = pickle.load(open("Simple_Button/pyfile/companydictdataframes","rb"))
 
 def cleaning(item):
 #     if isinstance(x, str):
@@ -206,7 +206,7 @@ height = list(get_proc_value_per_year(company,year).values())
 
 for i in range(len(category)):
     line_chart.add(category[i], height[i])
-line_chart.render_to_file('./pygal/'+company.upper()+'bar_plot.svg')
+line_chart.render_to_file('Simple_Button/pygal/'+company.upper()+'bar_plot.svg')
 
 
 # dot_chart = pygal.Dot(x_label_rotation=30,show_legend=False, style = dark_lighten_style, height = 300,width =600)
@@ -219,7 +219,7 @@ line_chart.render_to_file('./pygal/'+company.upper()+'bar_plot.svg')
 # dot_chart.render_to_file('./pygal/'+company.upper()+'bar_plot.svg')
 
 
-print('./pygal/'+company+'bar_plot.svg')
+print('Simple_Button/pygal/'+company+'bar_plot.svg')
 
 # box_plot.render_to_file('./pygal/'+company+'box&whisker.svg')
 #
