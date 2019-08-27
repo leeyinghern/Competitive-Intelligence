@@ -15,7 +15,7 @@ a = []
 for line in sys.stdin:
     a.append(json.loads(line))
 
-d = pickle.load(open("./pyfile/agency_dataframe","rb"))
+d = pickle.load(open("Simple_Button/pyfile/agency_dataframe","rb"))
 param = json.loads(a[0])
 # print(type(param))
 
@@ -409,7 +409,7 @@ def agencyplot(agency):
 #     return(json01)
 
 
-address = './temp/'+str(agency)+'.txt'
+address = 'Simple_Button/temp/'+str(agency)+'.txt'
 
 
 with open(address, 'w') as outfile:
