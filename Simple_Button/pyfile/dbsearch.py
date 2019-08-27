@@ -50,7 +50,7 @@ def project_detail(arguments):
 
 
 # Create address variable in the temp folder
-address = './temp/'+"dbsearch"+''+str(random.randint(1,10000001))+'.txt'
+address = 'Simple_Button/temp/'+"dbsearch"+''+str(random.randint(1,10000001))+'.txt'
 
 # Write a file to the address
 with open(address, 'w') as outfile:
