@@ -466,7 +466,7 @@ def biddiff(company):
     # return(json01)
 
 
-address = './temp/'+str(company)+'plots.txt'
+address = 'Simple_Button/temp/'+str(company)+'plots.txt'
 
 
 with open(address, 'w') as outfile:
