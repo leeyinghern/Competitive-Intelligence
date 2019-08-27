@@ -166,18 +166,18 @@ for pj in projectdic:
     minmax[pj] = [minbid,maxbid]
     mmdiff[pj] = maxbid-minbid
 
-companiesdic = pickle.load(open("./pyfile/companies_dict","rb"))
-competitors = pickle.load(open("./pyfile/competitors_stored","rb"))
+companiesdic = pickle.load(open("Simple_Button/pyfile/companies_dict","rb"))
+competitors = pickle.load(open("Simple_Button/pyfile/competitors_stored","rb"))
 #competitors = {company:{project:diff}}
-bidcount = pickle.load(open("./pyfile/bidcount_stored","rb"))
+bidcount = pickle.load(open("Simple_Button/pyfile/bidcount_stored","rb"))
 #bidcount = {company:no. of bids}
-wincount = pickle.load(open("./pyfile/wincount_stored","rb"))
+wincount = pickle.load(open("Simple_Button/pyfile/wincount_stored","rb"))
 #wincount = {company:no. of wins}
-competitorpjs = pickle.load(open("./pyfile/competitorpjs_stored","rb"))
+competitorpjs = pickle.load(open("Simple_Button/pyfile/competitorpjs_stored","rb"))
 #competitorpjs = {company:[projects]}
-totalbids = pickle.load(open("./pyfile/totalbids_stored","rb"))
+totalbids = pickle.load(open("Simple_Button/pyfile/totalbids_stored","rb"))
 #totalbids = {company: total bidded amount for all projects}
-index = pickle.load(open("./pyfile/index_stored","rb"))
+index = pickle.load(open("Simple_Button/pyfile/index_stored","rb"))
 # index = {company:{project:bid index}}
 
 def date(company,project):
@@ -441,7 +441,7 @@ def comp_outcome(outcome):
     return(json01)
 
 
-address = './temp/'+str(company)+'plots.txt'
+address = 'Simple_Button/temp/'+str(company)+'plots.txt'
 
 
 with open(address, 'w') as outfile:
