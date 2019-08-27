@@ -25,7 +25,7 @@ except:
 
 
 def top_3_by_value(category):
-    d= pickle.load(open("./pyfile/dictionary_dataframe_2","rb"))
+    d= pickle.load(open("Simple_Button/pyfile/dictionary_dataframe_2","rb"))
     for item in d.keys():
         if category == item:
             dataframe = d[str(category)]
@@ -193,7 +193,7 @@ def top_3_by_value(category):
     return (json.dumps(all_dict))
 
 # Create address variable in the temp folder
-address = './temp/'+"intro_page"+''+str(random.randint(1,10000001))+'.txt'
+address = 'Simple_Button/temp/'+"intro_page"+''+str(random.randint(1,10000001))+'.txt'
 
 # Write a file to the address
 with open(address, 'w') as outfile:
