@@ -32,7 +32,7 @@ except:
 	agency = 1 #arbitrary
 
 
-d = pickle.load(open("./pyfile/allagency","rb"))
+d = pickle.load(open("Simple_Button/pyfile/allagency","rb"))
 
 
 def date_retrieval_all(agency, year):
@@ -177,10 +177,10 @@ def bar_plots(agency,year):
     for i in range(len(category)):
         line_chart.add(category[i], height[i])
 
-    return(line_chart.render_to_file('./pygal/'+agency+'bar.svg'))
+    return(line_chart.render_to_file('Simple_Button/pygal/'+agency+'bar.svg'))
 
 
 
 bar_plots(agency,year)
 
-print('./pygal/'+agency+'bar.svg')
+print('Simple_Button/pygal/'+agency+'bar.svg')
