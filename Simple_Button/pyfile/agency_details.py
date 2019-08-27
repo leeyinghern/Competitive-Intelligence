@@ -38,7 +38,7 @@ def agency_details(agency):
 
 
 # Create address variable in the temp folder
-address = './temp/'+str(agency)+"details"+'.txt'
+address = 'Simple_Button/temp/'+str(agency)+"details"+'.txt'
 
 
 with open(address, 'w') as outfile:
