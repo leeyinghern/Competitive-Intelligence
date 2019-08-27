@@ -65,7 +65,7 @@ def company_detail(arguments):
     dict1 = {"title":arguments ,"bidRange":bidRange,"winRate":winRate,"totalSum":totalSum,"fg":fg}
     return json.dumps(dict1)
 # Create address variable in the temp folder
-address = './temp/'+arguments+'company_details'+''+str(random.randint(1,10000001))+'.txt'
+address = 'Simple_Button/temp/'+arguments+'company_details'+''+str(random.randint(1,10000001))+'.txt'
 
 # Write a file to the address
 with open(address, 'w') as outfile:
