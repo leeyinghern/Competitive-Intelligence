@@ -26,7 +26,7 @@ except:
 
 agency = agency.lower()
 def top_3_by_value(agency):
-    d = pickle.load(open("./pyfile/agency_dataframe","rb"))
+    d = pickle.load(open("Simple_Button/pyfile/agency_dataframe","rb"))
     for item in d.keys():
         if agency == item:
             dataframe = d[str(agency)]
@@ -45,12 +45,12 @@ def top_3_by_value(agency):
 
     # pie_chart.render_to_file('./pygal/'+agency+'.svg')
 
-    return(pie_chart.render_to_file('./pygal/'+agency+'.svg'))
+    return(pie_chart.render_to_file('Simple_Button/pygal/'+agency+'.svg'))
 
 
 top_3_by_value(agency)
 # Output the address for retrieval using JS
-print('./pygal/'+agency+'.svg')
+print('Simple_Button/pygal/'+agency+'.svg')
 
 # C:\Users\Lee Ying Hern\Desktop\Simple Button2\Simple Button\pygal\services advertising services.svg
 # address = './temp/'+"intro_page"+''+str(random.randint(1,10000001))+'.txt'
