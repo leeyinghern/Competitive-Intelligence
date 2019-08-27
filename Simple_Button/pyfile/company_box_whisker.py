@@ -26,7 +26,7 @@ except:
 	company = 1 #arbitrary
 
 company = company.lower()
-d = pickle.load(open("./pyfile/companydictdataframes","rb"))
+d = pickle.load(open("Simple_Button/pyfile/companydictdataframes","rb"))
 def cleaning(item):
 #     if isinstance(x, str):
     item = item.replace('⇒','')
@@ -198,8 +198,8 @@ values = list(get_value_year(company).values())
 for i in range(len(year)):
     box_plot.add(str(year[i]), values[i])
 
-box_plot.render_to_file('./pygal/'+company+'box&whisker.svg')
+box_plot.render_to_file('Simple_Button/pygal/'+company+'box&whisker.svg')
 
 
 # Output the address for retrieval using JS
-print('./pygal/'+company+'box&whisker.svg')
+print('Simple_Button/pygal/'+company+'box&whisker.svg')
