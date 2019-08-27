@@ -319,7 +319,7 @@ def winrategraph(company1,company2):
     return(json01)
 
 
-address = './temp/'+str(company)+'.txt'
+address = 'Simple_Button/temp/'+str(company)+'.txt'
 
 
 with open(address, 'w') as outfile:
