@@ -46,7 +46,7 @@ def return_value(method,arguments=None):
     # return func(arguments)
 
 # this is a temporary file with random integer suffix
-address = './temp/'+'title_search'+str(random.randint(1,10000001))+'.txt'
+address = 'Simple_Button/temp/'+'title_search'+str(random.randint(1,10000001))+'.txt'
 
 with open(address, 'w') as outfile:
     json.dump(title_detail(arguments), outfile)
