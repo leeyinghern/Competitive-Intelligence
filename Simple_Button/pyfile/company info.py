@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt  # for visualisation
 # data = []
 # for x in mydoc:
 #     data.append(x)
-data = pickle.load(open("./pyfile/all_stuff","rb"))
+data = pickle.load(open("Simple_Button/pyfile/all_stuff","rb"))
 for entry in data:
     if len(entry['Awards']) == 1:
         for i in range(len(entry['Respondents'])):
