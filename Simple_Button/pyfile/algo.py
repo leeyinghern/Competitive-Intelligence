@@ -18,12 +18,12 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error,mean_absolute_error
 
 punctuations = [",",".","(",")","-",".",'/'] #list of punctuations, expand if neccessary
-new_model,logreg,sortedCompany = pickle.load(open("./pyfile/training_parameters.pkl","rb"))
+new_model,logreg,sortedCompany = pickle.load(open("Simple_Button/pyfile/training_parameters.pkl","rb"))
 
-lda_model_10, id2word, d_topic_10, converted_currency = pickle.load(open("./pyfile/stuff to run","rb"))
-title_list = pickle.load(open("./pyfile/title list","rb"))
+lda_model_10, id2word, d_topic_10, converted_currency = pickle.load(open("Simple_Button/pyfile/stuff to run","rb"))
+title_list = pickle.load(open("Simple_Button/pyfile/title list","rb"))
 stop_words = set(stopwords.words('english'))
-nlp = pickle.load(open("./pyfile/spacy.pkl","rb"))
+nlp = pickle.load(open("Simple_Button/pyfile/spacy.pkl","rb"))
 
 def tokenize_text(text):
         #token a string into individual words
