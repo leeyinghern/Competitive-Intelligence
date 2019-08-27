@@ -4,7 +4,7 @@ const express = require('express')
 var path = require('path');
 var fs = require('fs');
 let {PythonShell} = require('python-shell')
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 
 // Define app
 const app = express();

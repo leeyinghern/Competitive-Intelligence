@@ -18,24 +18,24 @@
 // var URLFETCH19 = 'http://localhost:3000/gauge_plot';
 
 
-var URLFETCH1 = 'comp-intel-2.herokuapp.com/titles';
-var URLFETCH2 = 'comp-intel-2.herokuapp.com/proj_details';
-var URLFETCH3 = 'comp-intel-2.herokuapp.com/biddiff';
-var URLFETCH4 = 'comp-intel-2.herokuapp.com/bidindex';
-var URLFETCH5 = 'comp-intel-2.herokuapp.com/dbsearch';
-var URLFETCH6 = 'comp-intel-2.herokuapp.com/company_details';
-var URLFETCH7 = 'comp-intel-2.herokuapp.com/agency_plot';
-var URLFETCH8 = 'comp-intel-2.herokuapp.com/agency_details';
-var URLFETCH9 = 'comp-intel-2.herokuapp.com/bulk_details';
-var URLFETCH10 = 'comp-intel-2.herokuapp.com/intro_page';
-var URLFETCH11 = 'comp-intel-2.herokuapp.com/intro_plot';
-var URLFETCH12 = 'comp-intel-2.herokuapp.com/agency_pie_plot';
-var URLFETCH14 = 'comp-intel-2.herokuapp.com/agency_bar_plot';
-var URLFETCH15 = 'comp-intel-2.herokuapp.com/agency_line_plot';
-var URLFETCH16 = 'comp-intel-2.herokuapp.com/company_whisker_plot';
-var URLFETCH17 = 'comp-intel-2.herokuapp.com/company_bar_plot';
-var URLFETCH18 = 'comp-intel-2.herokuapp.com/set_category';
-var URLFETCH19 = 'comp-intel-2.herokuapp.com/gauge_plot';
+var URLFETCH1 = 'http://comp-intel-2.herokuapp.com/titles';
+var URLFETCH2 = 'http://comp-intel-2.herokuapp.com/proj_details';
+var URLFETCH3 = 'http://comp-intel-2.herokuapp.com/biddiff';
+var URLFETCH4 = 'http://comp-intel-2.herokuapp.com/bidindex';
+var URLFETCH5 = 'http://comp-intel-2.herokuapp.com/dbsearch';
+var URLFETCH6 = 'http://comp-intel-2.herokuapp.com/company_details';
+var URLFETCH7 = 'http://comp-intel-2.herokuapp.com/agency_plot';
+var URLFETCH8 = 'http://comp-intel-2.herokuapp.com/agency_details';
+var URLFETCH9 = 'http://comp-intel-2.herokuapp.com/bulk_details';
+var URLFETCH10 = 'http://comp-intel-2.herokuapp.com/intro_page';
+var URLFETCH11 = 'http://comp-intel-2.herokuapp.com/intro_plot';
+var URLFETCH12 = 'http://comp-intel-2.herokuapp.com/agency_pie_plot';
+var URLFETCH14 = 'http://comp-intel-2.herokuapp.com/agency_bar_plot';
+var URLFETCH15 = 'http://comp-intel-2.herokuapp.com/agency_line_plot';
+var URLFETCH16 = 'http://comp-intel-2.herokuapp.com/company_whisker_plot';
+var URLFETCH17 = 'http://comp-intel-2.herokuapp.com/company_bar_plot';
+var URLFETCH18 = 'http://comp-intel-2.herokuapp.com/set_category';
+var URLFETCH19 = 'http://comp-intel-2.herokuapp.com/gauge_plot';
 var mostRecentXHR = undefined;
 
 
