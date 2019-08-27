@@ -28,7 +28,7 @@ except:
 
 agency = agency.lower()
 # d = pickle.load(open("./pyfile/agency_dataframe","rb"))
-d = pickle.load(open("./pyfile/allagency","rb"))
+d = pickle.load(open("Simple_Button/pyfile/allagency","rb"))
 
 def to_datetime(d):
  day, month, year = map(int, d.split(' '))
@@ -152,7 +152,7 @@ def get_proc_cat(agency, year):
 
 
 # Create address variable in the temp folder
-address = './temp/'+str(agency)+"categories"+'.txt'
+address = 'Simple_Button/temp/'+str(agency)+"categories"+'.txt'
 
 
 with open(address, 'w') as outfile:
