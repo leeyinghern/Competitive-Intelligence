@@ -19,7 +19,7 @@ import pickle
 import spacy
 
 
-lda_model_10, id2word, d_topic_10, converted_currency = pickle.load(open("./pyfile/stuff to run","rb"))
+lda_model_10, id2word, d_topic_10, converted_currency = pickle.load(open("Simple_Button/pyfile/stuff to run","rb"))
 title_list = pickle.load(open("./pyfile/title list","rb"))
 stop_words = set(stopwords.words('english'))
 nlp = pickle.load(open("./pyfile/spacy.pkl","rb"))
