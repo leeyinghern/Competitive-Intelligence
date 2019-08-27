@@ -30,7 +30,7 @@ except:
 	agency = 1 #arbitrary
 
 
-d = pickle.load(open("./pyfile/allagency","rb"))
+d = pickle.load(open("Simple_Button/pyfile/allagency","rb"))
 
 
 def date_retrieval_all(agency, year):
@@ -213,7 +213,7 @@ def line_plots(agency):
     return(json01)
 
 
-address = './temp/'+str(agency)+'line_plot.txt'
+address = 'Simple_Button/temp/'+str(agency)+'line_plot.txt'
 
 
 with open(address, 'w') as outfile:
