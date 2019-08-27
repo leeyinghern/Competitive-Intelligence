@@ -20,7 +20,7 @@ import spacy
 
 
 lda_model_10, id2word, d_topic_10, converted_currency = pickle.load(open("Simple_Button/pyfile/stuff to run","rb"))
-title_list = pickle.load(open("./pyfile/title list","rb"))
+title_list = pickle.load(open("Simple_Button/pyfile/title list","rb"))
 stop_words = set(stopwords.words('english'))
 nlp = pickle.load(open("Simple_Button/pyfile/spacy.pkl","rb"))
 
@@ -172,7 +172,7 @@ def get_value(sentence):
 
 def get_similar_sentence(sentence):
     new_sentence = sentence.split()
-    opn = open("./pyfile/search", 'rb')
+    opn = open("Simple_Button/pyfile/search", 'rb')
     model = pickle.load(opn )
 
     similar_doc = model.docvecs.most_similar(positive=[model.infer_vector(new_sentence, alpha = 0.01, epochs= 10000)],topn=3)
