@@ -19,5 +19,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "jquery": "^3.4.1"
+  },
+  "scripts":{
+    "start": "node ./Simple_Button/app.js"
   }
 }
