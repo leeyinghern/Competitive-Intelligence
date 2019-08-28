@@ -276,7 +276,7 @@ def company_list():
     return list(gdf['Company_name'].values)
 
 #plot_difference_from_mean('ncs pte. ltd.')
-d = pickle.load(open("SImple_Button/pyfile/companydictdataframes","rb"))
+d = pickle.load(open("Simple_Button/pyfile/companydictdataframes","rb"))
 def get_FG(company):
     company = company.lower()
     award = 0
