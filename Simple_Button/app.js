@@ -1005,7 +1005,7 @@ app.get("/gauge_plot", function(req,res){
 // })
 
 // Load Html
-app.use('/intro.html', express.static(__dirname + '/intro.html'));
+app.use('/', express.static(__dirname + '/'));
 
 // use 3000 port to listen
 // app.listen(process.env.POrt||3000, () => {
